@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html lang="uk">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>UCAN — Моніторинг у реальному часі та системи підтримки прийняття рішень</title>
+<link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<a class="skip-link" href="#lesson-main">Перейти до основного змісту</a>
+<header aria-label="Навігація заняття" class="app-header">
+<div class="header-inner">
+<div class="brand">UCAN</div>
+<a aria-label="Попереднє заняття" class="prev-lesson" href="https://clusterceu-crypto.github.io/UCAN-Lesson13/">← Попереднє заняття</a>
+<div class="lesson-context">
+<span class="lesson-id">Заняття 14</span>
+<span class="header-section" id="header-section">Початок</span>
+</div>
+<button class="btn btn-quiet reset-button" id="reset-button" type="button">🔄 Почати спочатку</button>
+</div>
+</header>
+<div class="qa-indicator" hidden="" id="qa-indicator">QA MODE · лише перегляд</div>
+<section aria-label="Прогрес заняття" class="progress-shell">
+<div class="progress-meta">
+<span id="page-label">Сторінка 1 з 9</span>
+<span id="percent-label">11%</span>
+</div>
+<div aria-label="Прогрес заняття" aria-valuemax="100" aria-valuemin="0" aria-valuenow="11" class="progress-track" role="progressbar">
+<div class="progress-bar" id="progress-bar"></div>
+</div>
+<nav aria-label="Розділи заняття" class="route-strip" id="route-strip"></nav>
+</section>
+<main class="page-shell" id="lesson-main" tabindex="-1">
+
+
+
+
+
+
+
+
+
+<section aria-labelledby="r1-title" class="route" data-route="0">
+<div class="prose">
+<p class="eyebrow">UCAN · ЗАНЯТТЯ 14</p>
+<h1 id="r1-title">Моніторинг у реальному часі та системи підтримки прийняття рішень</h1>
+<p class="subtitle">Системи підтримки рішень: від інтуїції до розрахунків</p>
+<h2>Навіщо Вам це заняття</h2>
+<p>У міському управлінні рішення часто потрібно приймати тоді, коли ситуація вже змінюється, а повної визначеності немає. Моніторинг допомагає бачити актуальні умови. Але самі цифри, сигнали чи показники ще не пояснюють, що робити.</p>
+<p>Це заняття показує, як перейти від актуальної інформації до осмисленої дії: спочатку сформулювати одне конкретне рішення, потім визначити, яка інформація для нього справді потрібна, зрозуміти, що вона означає, використати її для вибору дії та чітко визначити, хто ухвалює рішення і відповідає за виконання.</p>
+<p>Після цього заняття Ви зможете:</p>
+<ul>
+<li>сформулювати одне конкретне муніципальне рішення або питання, яке потребує актуальної інформації;</li>
+<li>відрізнити моніторинг від управлінської інтерпретації та не плутати сигнал із рішенням;</li>
+<li>пояснити, як система або інструмент може допомогти порівняти варіанти, не ухвалюючи рішення замість людини;</li>
+<li>визначити, хто — людина чи міський орган — має повноваження ухвалити рішення і хто відповідає за виконання;</li>
+<li>створити для «Портфеля мера» картку рішення.</li>
+</ul>
+<h2>Ваш практичний результат</h2>
+<p><strong>Картка рішення</strong> — короткий робочий матеріал, у якому Ви пов’яжете конкретне рішення, актуальну інформацію, її управлінське значення, те, як інформація підтримує вибір та відповідальну дію.</p>
+<aside class="callout key-thought">
+<h3>💡 Ключова думка</h3>
+<p>Дані не ухвалюють рішення. Вони зменшують невизначеність, якщо команда розуміє, що саме вони означають для конкретного управлінського питання, і зберігає відповідальність за вибір та дію.</p>
+</aside>
+</div>
+</section><section aria-labelledby="r2-title" class="route" data-route="1" hidden="">
+<div class="prose">
+<h2 id="r2-title">Від сигналу до управлінського питання</h2>
+<h3>Уявіть: одна станція показує різке зростання <span class="term-inline" data-term="no2">NO₂</span></h3>
+<p>Уявіть: одна станція показує різке зростання NO₂ — діоксиду азоту, не CO₂. Чи має місто одразу обмежувати рух — чи одного сигналу замало? Це умовний навчальний приклад, а не документована подія в Мадриді. <strong>Дані ще не є рішенням.</strong></p>
+<p>Мадрид використовує мережу моніторингу й офіційні погодинні дані. Одного ізольованого високого значення недостатньо: важливо, на яких станціях його зафіксовано і скільки часу воно тримається. Як один конкретний приклад, <strong>PREAVISO (попереджувальний рівень)</strong> визначається за NO₂ &gt;180 μg/m³, якщо перевищення одночасно триває або на двох станціях однієї зони протягом двох послідовних годин, або на трьох станціях мережі протягом трьох послідовних годин. Якщо рівень перевищено або прогнозується його перевищення, несприятливий прогноз погоди є додатковою умовою для початку епізоду, а не частиною числового порога.</p>
+<p>У протоколі також є <strong>AVISO (рівень попередження)</strong> та <strong>ALERTA (рівень тривоги)</strong>. PREAVISO, AVISO й ALERTA — це рівні, визначені протоколом. Сценарій реагування — це наступний крок: він допомагає зрозуміти, які дії відповідають такій ситуації. Сценарії окреслюють категорії можливих заходів: інформування й рекомендації, громадський транспорт, швидкість, паркування або рух. Ввести або припинити передбачені заходи та забезпечити їх виконання мають відповідальні міські органи й посадові особи. Дані й протокол самі рішення не ухвалюють.</p>
+<h3>Що тут відбувається як управлінська ситуація?</h3>
+<p>Спочатку місто бачить сигнал. Потім команда з’ясовує, що він означає для конкретного рішення. Після цього співвідносить ситуацію з відповідним сценарієм і розглядає передбачені дії. Рішення про дію та відповідальність за виконання залишаються за містом.</p>
+<aside class="callout"><h3>Навіщо місту все це?</h3><p>Протокол потрібен, щоб місто могло послідовно розпізнавати стійкі епізоди підвищеного NO₂, інформувати мешканців, організовувати поступову реакцію та захищати здоров’я. Це мета протоколу; окремо оцінюють, яких результатів він фактично дає.</p></aside>
+<p><strong>Офіційні джерела прикладу:</strong> <a class="resource-inline" href="https://www.madrid.es/portales/munimadrid/es/Inicio/MedioAmbiente/Instalaciones/Protocolo-de-actuacion-para-episodios-de-contaminacion-por-dioxido-de-nitrogeno/?vgnextchannel=864f79ed268fe410VgnVCM1000000b205a0aRCRD&amp;vgnextfmt=default&amp;vgnextoid=fd8718cea863c410VgnVCM1000000b205a0aRCRD" rel="noopener noreferrer" target="_blank">Офіційний протокол міста Мадрид щодо епізодів NO₂ ↗</a> · <a class="resource-inline" href="https://www.madrid.es/portales/munimadrid/es/Inicio/Movilidad-y-transportes/Gestiones-y-tramites/Escenarios-del-protocolo-de-actuacion-para-episodios-de-contaminacion-por-dioxido-de-nitrogeno/?vgnextchannel=b86f8fb9458fe410VgnVCM1000000b205a0aRCRD&amp;vgnextfmt=default&amp;vgnextoid=eb4a14b9c4dcb810VgnVCM2000001f4a900aRCRD" rel="noopener noreferrer" target="_blank">Як Мадрид застосовує сценарії реагування на NO₂ ↗</a></p>
+<h3>Тепер розкладемо вже знайому ситуацію на п’ять управлінських ланок</h3>
+<p><strong>D1 — Яке конкретне рішення потрібно підтримати?</strong> У Мадриді питання просте й конкретне: чи склалася поточна або прогнозована ситуація, за якої місту потрібно розглядати дії, передбачені протоколом? Спочатку визначте рішення. Лише після цього з’ясовуйте, яка інформація для нього справді потрібна.</p>
+<h3>D2 — Які дані можуть змінити це рішення?</h3>
+<p>Потрібні не всі доступні дані, а ті, що можуть змінити конкретне рішення: концентрація NO₂, на яких станціях і в яких частинах міста зафіксовано підвищення, скільки годин воно триває та що показує прогноз, зокрема чи є несприятливі погодні умови. Моніторинг відповідає: «Що ми бачимо зараз?» — але ще не обирає дію.</p>
+<aside aria-label="🏙️ А як у Вашій громаді?" class="management-pause"><h3>🏙️ А як у Вашій громаді?</h3><p>Оберіть одне реальне рішення у Вашій громаді. Які 3–5 видів актуальної інформації справді можуть змінити це рішення?</p></aside>
+<p>Короткі приклади сигналів поза Мадридом: рівень води, спека, скарги мешканців або повторювані затримки автобусів. Це не окремі нові історії: відбирайте лише те, що може змінити конкретне рішення.</p>
+</div>
+</section><section aria-labelledby="r3-title" class="route" data-route="2" hidden="">
+<div class="prose">
+<h2 id="r3-title">Від інформації до вибору</h2>
+<h3>D3 — Що цей сигнал означає для рішення зараз?</h3>
+<p>Між «ми отримали дані» і «ми знаємо, що робити» є ще один крок — <strong>управлінська інтерпретація</strong>. Це розуміння того, що ці дані означають саме для рішення зараз. Моніторинг показує, що відбувається. Інтерпретація пояснює, чому це важливо для вибору дії.</p>
+<p>У Мадриді команда дивиться не на одне число, а на поєднання ознак: концентрацію, на яких станціях і в яких частинах міста зафіксовано підвищення, скільки годин воно триває та несприятливий прогноз погоди. PREAVISO / AVISO / ALERTA — це рівні, визначені протоколом. Сценарій реагування — це наступний крок: він допомагає зрозуміти, які дії відповідають такій ситуації.</p>
+<h3>Короткий перенос поза Мадридом</h3>
+<p>Рівень води — це факт, але для управлінської інтерпретації можуть бути важливими також швидкість підйому, місце, прогноз і вразлива інфраструктура. Спека — це факт, але значення для рішення може залежати від тривалості, нічних температур, прогнозу та вразливих груп. Це лише короткі пояснювальні приклади, а не нові окремі ситуації.</p>
+<aside aria-label="🔎 Як це працює у Вас?" class="management-pause"><h3>🔎 Як це працює у Вас?</h3><p>Яке поєднання умов перетворить звичайний показник на важливий сигнал для Вашого рішення: одне значення, те, як показник змінюється, тривалість, місце, прогноз — чи їх поєднання?</p></aside>
+<p>Після інтерпретації команда вже знає не лише, що відбувається, а й чому це важливо саме для конкретного рішення.</p>
+<h3>D4 — Які дії доречні саме за таких умов?</h3>
+<p>Підтримка рішення допомагає команді зрозуміти можливі дії, але не ухвалює рішення замість неї. У Мадриді визначена ситуація та її тривалість співвідносяться з одним із п’яти сценаріїв, а сценарій окреслює обмежені категорії можливих заходів. Протокол задає правила, за якими команда співвідносить ситуацію з відповідним сценарієм реагування. Моніторинг може подати сигнал, панель моніторингу — показати зміну, програмна система — помітити закономірність у даних. Остаточне рішення залишається за уповноваженою людиною або органом.</p>
+</div>
+<figure class="visual-figure">
+<img alt="Схема показує, як одне управлінське питання переходить через актуальну інформацію, управлінську інтерпретацію та підтримку вибору до відповідальної дії; остаточне рішення залишається за уповноваженою командою." src="assets/UCAN_L14_A01_From_Management_Question_to_Accountable_Action_v1.1.png"/>
+</figure>
+</section><section aria-labelledby="r4-title" class="route" data-route="3" hidden="">
+<div class="prose wide-prose">
+<h2 id="r4-title">Від вибору до відповідальної дії</h2>
+<h3>D5 — Хто має право сказати: «Діємо»?</h3>
+<p>У Мадриді протокол допомагає структурувати реакцію. Введення або припинення передбачених заходів та їх виконання залишаються відповідальністю міських органів і посадових осіб. Дані й протокол не ухвалюють рішення самі.</p>
+<h3>Послідовність відповідальності</h3>
+<p><strong>Хто бачить сигнал? → Хто його перевіряє? → Хто з’ясовує, що він означає? → Хто готує варіанти? → Хто має повноваження ввести потрібні заходи? → Хто відповідає за виконання?</strong></p>
+<aside aria-label="👥 А хто відповідає у Вас?" class="management-pause"><h3>👥 А хто відповідає у Вас?</h3><p>Для одного рішення у Вашій громаді позначте ці шість ролей. Де проходить межа між підготовкою, повноваженням діяти й відповідальністю за виконання?</p></aside>
+<h3>Що змінилося, коли ми з’єднали всі п’ять ланок?</h3>
+<p>Спочатку місто бачить сигнал. Потім команда з’ясовує, що він означає. Після цього визначає можливі дії. І лише тоді відповідальна людина або орган ухвалює рішення та відповідає за його виконання.</p>
+<h3>П’ять управлінських питань</h3>
+<p>Скористайтеся таблицею як короткою перевіркою — без повторного переказу прикладу Мадрида.</p>
+<div aria-label="П’ять управлінських питань D1–D5" class="table-wrap" role="region" tabindex="0">
+<table><thead><tr><th>Ланка</th><th>Управлінське питання</th></tr></thead><tbody>
+<tr><th>D1</th><td>Яке конкретне рішення потрібно підтримати?</td></tr>
+<tr><th>D2</th><td>Які дані можуть змінити це рішення?</td></tr>
+<tr><th>D3</th><td>Що ця комбінація даних означає саме зараз?</td></tr>
+<tr><th>D4</th><td>Які варіанти дії відповідають цій ситуації?</td></tr>
+<tr><th>D5</th><td>Хто має повноваження діяти і хто відповідає за виконання?</td></tr>
+</tbody></table></div>
+<h3>Що переносити у свою громаду</h3>
+<p>Не копіюйте мадридські пороги або транспортні заходи. Переносьте саму логіку: спочатку визначте рішення, потім зберіть актуальну інформацію, з’ясуйте її значення, окресліть можливі дії й чітко визначте, хто ухвалює рішення та відповідає за виконання.</p>
+<p>Офіційне джерело синтезу: <a class="resource-inline" href="https://www.madrid.es/portales/munimadrid/es/Inicio/MedioAmbiente/Instalaciones/Protocolo-de-actuacion-para-episodios-de-contaminacion-por-dioxido-de-nitrogeno/?vgnextchannel=864f79ed268fe410VgnVCM1000000b205a0aRCRD&amp;vgnextfmt=default&amp;vgnextoid=fd8718cea863c410VgnVCM1000000b205a0aRCRD" rel="noopener noreferrer" target="_blank">Офіційний протокол міста Мадрид щодо епізодів NO₂ ↗</a></p>
+<h3>Чому даних недостатньо без логіки рішення</h3>
+<p>Сенсори й панелі моніторингу самі по собі не дають послідовної дії. Команда має розуміти, що означає сигнал, коли потрібна реакція, які дії доречні і хто ухвалює рішення.</p>
+
+
+</div>
+</section><section aria-labelledby="r5-title" class="route" data-route="4" hidden="">
+<div class="prose wide-prose">
+<h2 id="r5-title">🧩 Спробуйте застосувати логіку</h2><p><strong>А тепер — коротка перевірка.</strong></p><p>Спробуйте перенести цю логіку на іншу муніципальну ситуацію.</p>
+<p>Нижче — умовна навчальна ситуація. Вона не описує конкретне місто. Використайте її як коротку самоперевірку: завдання не оцінюється і не впливає на завершення заняття.</p><p>Перед початком перевірте лише одне: чи можете Ви пов’язати одне управлінське питання з інформацією, потрібною для рішення, обґрунтованим тлумаченням, підтримкою вибору та чіткою відповідальністю — без копіювання мадридських умов?</p>
+<div class="quiz-stack" id="formative-container"></div>
+</div>
+</section><section aria-labelledby="r6-title" class="route" data-route="5" hidden="">
+<div class="prose wide-prose">
+<h2 id="r6-title">🔎 Де поглибити логіку</h2>
+<p>Для Мадрида тут повторено офіційні джерела, щоб Ви могли окремо переглянути правила протоколу, сценарії реагування, звіти про фактичні епізоди та погодинні дані. Додаткові OECD і C40/EY залишаються ресурсами про врядування міськими даними.</p>
+<div class="resource-grid">
+<article class="resource-card"><h3>Офіційний протокол міста Мадрид щодо епізодів NO₂</h3><p>Поточна логіка протоколу: рівні, визначені протоколом, погодні умови, сценарії реагування та відповідальність міста.</p><a class="resource-link" href="https://www.madrid.es/portales/munimadrid/es/Inicio/MedioAmbiente/Instalaciones/Protocolo-de-actuacion-para-episodios-de-contaminacion-por-dioxido-de-nitrogeno/?vgnextchannel=864f79ed268fe410VgnVCM1000000b205a0aRCRD&amp;vgnextfmt=default&amp;vgnextoid=fd8718cea863c410VgnVCM1000000b205a0aRCRD" rel="noopener noreferrer" target="_blank">Відкрити офіційний ресурс ↗</a></article>
+<article class="resource-card"><h3>Як Мадрид застосовує сценарії реагування на NO₂</h3><p>Офіційне пояснення сценаріїв реагування та категорій заходів. Допомагає побачити різницю між рівнем, визначеним протоколом, і сценарієм реагування.</p><a class="resource-link" href="https://www.madrid.es/portales/munimadrid/es/Inicio/Movilidad-y-transportes/Gestiones-y-tramites/Escenarios-del-protocolo-de-actuacion-para-episodios-de-contaminacion-por-dioxido-de-nitrogeno/?vgnextchannel=b86f8fb9458fe410VgnVCM1000000b205a0aRCRD&amp;vgnextfmt=default&amp;vgnextoid=eb4a14b9c4dcb810VgnVCM2000001f4a900aRCRD" rel="noopener noreferrer" target="_blank">Відкрити офіційний ресурс ↗</a></article>
+<article class="resource-card"><h3>Звіти Мадрида про фактичні епізоди NO₂</h3><p>Архів звітів про реальні епізоди. Допомагає відрізняти правила протоколу від опису конкретних випадків.</p><a class="resource-link" href="https://www.madrid.es/portales/munimadrid/es/Inicio/Servicios-sociales-y-salud/Salud/Informes-sobre-episodios-de-contaminacion-por-dioxido-de-nitrogeno/?vgnextchannel=0815c8eb248fe410VgnVCM1000000b205a0aRCRD&amp;vgnextfmt=default&amp;vgnextoid=0ab214b9c4dcb810VgnVCM2000001f4a900aRCRD" rel="noopener noreferrer" target="_blank">Відкрити офіційний ресурс ↗</a></article>
+<article class="resource-card"><h3>Офіційні погодинні дані якості повітря Мадрида</h3><p>Офіційні погодинні дані зі станцій моніторингу — джерело для розуміння поточної / моніторингової інформації.</p><a class="resource-link" href="https://datos.madrid.es/dataset/201200-0-calidad-aire-horario" rel="noopener noreferrer" target="_blank">Відкрити офіційний ресурс ↗</a></article>
+<article class="resource-card"><h3>OECD: Smart City Data Governance</h3><p>Корисно, якщо Ви хочете перевірити, які умови якості, відповідальності та врядування роблять міські дані придатними для управлінського використання.</p><a class="resource-link" href="https://www.oecd.org/en/publications/smart-city-data-governance_e57ce301-en.html" rel="noopener noreferrer" target="_blank">Відкрити офіційний ресурс ↗</a></article>
+<article class="resource-card"><h3>C40/EY: City Climate Data Management Framework</h3><p>Корисно для розуміння ролей, відповідальності та управління кліматичними даними. Зосередьтеся на організаційних умовах, а не на оцінці «зрілості» як меті цього заняття.</p><a class="resource-link" href="https://www.c40knowledgehub.org/s/article/City-Climate-Data-Management-Framework?language=en_US" rel="noopener noreferrer" target="_blank">Відкрити офіційний ресурс ↗</a></article>
+</div>
+</div>
+</section><section aria-labelledby="r7-title" class="route" data-route="6" hidden="">
+<div class="prose wide-prose">
+<h2 id="r7-title">📂 Ваша картка рішення</h2>
+<p><strong>Картка рішення</strong> допомагає зафіксувати не просто дані, а повну управлінську логіку одного рішення. Оберіть реальне питання Вашої громади, для якого актуальна інформація може змінити управлінську дію.</p><p>Ви вже окремо попрацювали з управлінським питанням, актуальною інформацією, її значенням, підтримкою вибору та відповідальністю. Тепер зберіть їх в один управлінський об’єкт для власного рішення.</p>
+<p>Це Ваш робочий управлінський матеріал. Він не оцінюється балами і сам по собі не є умовою завершення заняття. Його цінність — у тому, щоб Ви могли використати його в робочій розмові з відповідальною командою.</p>
+<p class="time-note">Орієнтовний час виконання: 15–20 хвилин.</p>
+<form class="portfolio-form" id="portfolio-form" novalidate="">
+<div class="field-group"><label for="portfolio-decision">Рішення / питання</label><p class="field-help">Яке одне конкретне муніципальне рішення Ви готуєте або переглядаєте?</p><textarea data-portfolio-key="decision" id="portfolio-decision" rows="4"></textarea></div>
+<div class="field-group"><label for="portfolio-info">Актуальна інформація</label><p class="field-help">Яка поточна або оновлена інформація справді потрібна для цього рішення?</p><textarea data-portfolio-key="information" id="portfolio-info" rows="4"></textarea></div>
+<div class="field-group"><label for="portfolio-interpretation">Інтерпретація</label><p class="field-help">Що ця інформація означає саме для Вашого рішення? Який контекст або обмеження важливо врахувати?</p><textarea data-portfolio-key="interpretation" id="portfolio-interpretation" rows="4"></textarea></div>
+<div class="field-group"><label for="portfolio-support">Підтримка вибору</label><p class="field-help">Який варіант, пріоритет або реакцію ця інтерпретація допомагає обґрунтувати чи порівняти?</p><textarea data-portfolio-key="support" id="portfolio-support" rows="4"></textarea></div>
+<div class="field-group"><label for="portfolio-accountability">Відповідальність і дія</label><p class="field-help">Хто має повноваження прийняти рішення та хто відповідає за наступну дію?</p><textarea data-portfolio-key="accountability" id="portfolio-accountability" rows="4"></textarea></div>
+<div class="action-row">
+<button class="btn btn-primary" id="portfolio-save" type="button">Зберегти картку</button>
+<button class="btn btn-secondary" id="portfolio-pdf" type="button">📥 Завантажити PDF</button>
+<button class="btn btn-danger" id="portfolio-delete" type="button">Видалити картку</button>
+</div>
+<p aria-live="polite" class="status" id="portfolio-status" role="status"></p>
+</form>
+<section aria-labelledby="synthesis-title" class="synthesis">
+<h3 id="synthesis-title">Ваша картка — короткий перегляд</h3>
+<dl id="synthesis-list"></dl>
+</section>
+<aside class="callout"><h3>Не перетворюйте картку на технічну форму</h3><p>Для цієї картки не потрібно описувати технічну систему збирання даних або довгострокову систему оцінювання програми. Додавайте лише відомості, потрібні для одного конкретного рішення.</p></aside>
+<section aria-labelledby="ai-title" class="ai-panel">
+<h3 id="ai-title">🤖 ШІ як консультант</h3>
+<p>ШІ може бути корисним для критичної перевірки логіки Вашої картки: чи не змішуєте Ви інформацію з інтерпретацією, чи зрозуміло показано, як дані підтримують вибір, і чи не загубилася людська відповідальність. Використовуйте лише ті відомості, які свідомо готові передати, перевіряйте відповідь самостійно і не дозволяйте ШІ вигадувати поточні дані, встановлювати непідтверджені пороги або приймати муніципальне рішення замість Вас.</p>
+<div class="ai-function">
+<h4>Перевірити логіку картки</h4>
+<p>Зовнішні сервіси нічого не отримують автоматично. Ви самі вирішуєте, що копіювати й передавати. Не вводьте персональні або конфіденційні дані. Відповідь ШІ потребує перевірки та не замінює відповідальну муніципальну оцінку.</p>
+<div class="action-row">
+<button class="btn btn-primary" id="copy-ai-prompt" type="button">📋 Копіювати промпт</button>
+<a class="btn btn-external" href="https://chatgpt.com/" rel="noopener noreferrer" target="_blank">🤖 Відкрити ChatGPT ↗</a>
+<a class="btn btn-external" href="https://gemini.google.com/app" rel="noopener noreferrer" target="_blank">✨ Відкрити Gemini ↗</a>
+</div>
+<p aria-live="polite" class="status" id="ai-status" role="status"></p>
+<div class="copy-fallback" hidden="" id="ai-copy-fallback">
+<label for="ai-prompt-fallback">Промпт для ручного копіювання</label>
+<textarea id="ai-prompt-fallback" readonly="" rows="10"></textarea>
+</div>
+</div>
+</section>
+</div>
+</section><section aria-labelledby="r8-title" class="route" data-route="7" hidden="">
+<div class="prose wide-prose">
+<h2 id="r8-title">📝 Фінальна перевірка</h2>
+<p>Фінальна перевірка використовує іншу ситуацію, ніж приклад Мадрида та тренувальна вправа. Нижче — умовна громада, яка вирішує, чи скоригувати полив міських зелених зон у сухий спекотний період. Це навчальний сценарій, а не опис реального міста.</p>
+<p>Обирайте відповідь, яка найкраще показує застосування логіки заняття в новій муніципальній ситуації.</p>
+<form class="quiz-stack" id="final-form" novalidate=""></form>
+<div class="assessment-actions">
+<button class="btn btn-primary" id="final-check" type="button">Перевірити відповіді</button>
+<p aria-live="polite" class="status assessment-status" id="final-status" role="status"></p>
+</div>
+<div class="lock-note" id="completion-lock-note">Завершення відкриється після поточної перевірки з результатом 5/5.</div>
+</div>
+</section><section aria-labelledby="r9-title" class="route" data-route="8" hidden="">
+<div class="prose completion-panel">
+<h2 id="r9-title">✅ Завершення і перенесення у практику</h2><h3>💡 Що варто забрати із цього заняття</h3><p>Сьогодні ми розібрали, як перейти від актуального сигналу до обґрунтованої та відповідальної управлінської дії: визначити рішення, відібрати потрібну інформацію, зрозуміти її значення, окреслити можливі дії та зберегти чітку відповідальність за вибір.</p><p>Ми працювали з рішеннями, які потрібно приймати зараз.</p><p>Далі в курсі ми ще повернемося до іншого важливого питання — як оцінювати, чи дає міська програма або політика очікувані результати в довшій перспективі.</p>
+
+<aside class="callout final-habit"><h3>Одна управлінська звичка, яку варто забрати із собою</h3><p>Починайте не з екрана чи інструменту, а з управлінського питання — і завершуйте ясною відповідальністю за дію.</p></aside>
+<p>Після успішної фінальної перевірки переходьте до наступного етапу курсу. Практичну картку збережіть як робочий матеріал для розмови з командою, яка відповідає за обране Вами рішення.</p>
+</div>
+</section></main>
+<nav aria-label="Навігація між розділами" class="bottom-nav">
+<button class="btn btn-secondary" id="nav-prev" type="button">← Назад</button>
+<span class="nav-page" id="nav-page">1 / 9</span>
+<button class="btn btn-primary" id="nav-next" type="button">Далі →</button>
+</nav>
+<div aria-live="polite" class="sr-only" id="global-status" role="status"></div>
+<script src="js/app.js"></script>
+</body>
+</html>
